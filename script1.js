@@ -48,16 +48,20 @@ function cubeRoot() {
   outputScreen.value = Math.cbrt(eval(outputScreen.value));
 }
 
+function degreesToRadians(degrees) {
+  return degrees * (Math.PI / 180);
+}
+
 function sine() {
-  outputScreen.value = Math.sin(eval(outputScreen.value));
+  outputScreen.value = Math.sin(degreesToRadians(eval(outputScreen.value)));
 }
 
 function cosine() {
-  outputScreen.value = Math.cos(eval(outputScreen.value));
+  outputScreen.value = Math.cos(degreesToRadians(eval(outputScreen.value)));
 }
 
 function tangent() {
-  outputScreen.value = Math.tan(eval(outputScreen.value));
+  outputScreen.value = Math.tan(degreesToRadians(eval(outputScreen.value)));
 }
 
 function logarithm() {
