@@ -136,11 +136,9 @@ body {
 
 }
 .msg{
-  display: flex;
+  marigin: 9px;
 }
 .msg img{
   max-width: 500px;
   height: auto;
-  margin-left: 50px;
-
 }
