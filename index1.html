@@ -13,12 +13,12 @@
         <input type="text" placeholder="0" id="outputScreen" />
         <button onclick="clearInput()">Cl</button>
         <button onclick="del()">Del</button>
-        <button onclick="display('%')">%</button>
+        <button onclick="logarithm()">Log</button>
         <button onclick="display('/')">/</button>
         <button onClick="display('7')">7</button>
         <button onClick="display('8')">8</button>
         <button onClick="display('9')">9</button>
-        <button onClick="display('*')">*</button>
+        <button onClick="display('*')">X</button>
         <button onClick="display('4')">4</button>
         <button onClick="display('5')">5</button>
         <button onClick="display('6')">6</button>
@@ -32,11 +32,12 @@
         <button onclick="calculate()" class="equal">=</button>
         <button onclick="switchToScientificMode()" id="shiftButton">Sci</button>
         <div id="scientificButtons" style="display: none">
-          <button onclick="squareRoot()">√</button>
-          <button onclick="sine()">sin</button>
-          <button onclick="cosine()">cos</button>
-          <button onclick="tangent()">tan</button>
-          <button onclick="logarithm()">log</button>
+          <div class="row">
+            <button onclick="sine()">sin</button>
+            <button onclick="cosine()">cos</button>
+            <button onclick="tangent()">tan</button>
+            <button onclick="squareRoot()">√</button>
+          </div>
         </div>
       </div>
     </div>
