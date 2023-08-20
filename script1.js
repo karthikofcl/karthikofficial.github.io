@@ -44,10 +44,6 @@ function squareRoot() {
   outputScreen.value = Math.sqrt(eval(outputScreen.value));
 }
 
-function cubeRoot() {
-  outputScreen.value = Math.cbrt(eval(outputScreen.value));
-}
-
 function degreesToRadians(degrees) {
   return degrees * (Math.PI / 180);
 }
@@ -61,9 +57,18 @@ function cosine() {
 }
 
 function tangent() {
-  outputScreen.value = Math.tan(degreesToRadians(eval(outputScreen.value)));
+  let inputValue = eval(outputScreen.value);
+  if (isScientificMode) {
+    inputValue = degreesToRadians(inputValue);
+  }
+  
+  // Check if the angle is a multiple of 90 degrees
+  if (Math.abs(inputValue) % (Math.PI / 2) === 0) {
+    outputScreen.value = "Infinity";
+  } else {
+    outputScreen.value = Math.tan(inputValue);
+  }
 }
-
 function logarithm() {
   outputScreen.value = Math.log10(eval(outputScreen.value));
 }
