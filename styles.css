@@ -78,7 +78,7 @@ body {
   }
   
 #form {
-  max-width: 100%; /* Ensure the form doesn't exceed the width of the contact section */
+  max-width: 60%; /* Ensure the form doesn't exceed the width of the contact section */
   background-color: rgb(206, 226, 235);
   border-radius: 6px;
   padding: 30px;
