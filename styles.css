@@ -77,14 +77,22 @@ body {
     font-size: large;
   }
   
-  #form{
-    width: 400px;
-    background-color: rgb(206, 226, 235);
-    border-radius: 6px;
-    padding: 30px;
-    margin-left: 30px;
-
+#form {
+  max-width: 100%; /* Ensure the form doesn't exceed the width of the contact section */
+  background-color: rgb(206, 226, 235);
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 auto; /* Center the form horizontally */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
+
+/* Adjust form padding on smaller screens */
+@media only screen and (max-width: 600px) {
+  #form {
+    padding: 20px; /* Reduce padding for better fit on smaller screens */
+  }
+}
+
 #form button{
     background-color: rgb(170, 173, 179);
     color: rgb(18, 2, 2);
