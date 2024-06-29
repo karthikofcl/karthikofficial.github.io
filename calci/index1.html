@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific calculator</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="script1.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" placeholder="0" id="outputScreen" />
+        <button onclick="clearInput()">Cl</button>
+        <button onclick="del()">Del</button>
+        <button onclick="logarithm()">Log</button>
+        <button onclick="display('/')">/</button>
+        <button onClick="display('7')">7</button>
+        <button onClick="display('8')">8</button>
+        <button onClick="display('9')">9</button>
+        <button onClick="display('*')">X</button>
+        <button onClick="display('4')">4</button>
+        <button onClick="display('5')">5</button>
+        <button onClick="display('6')">6</button>
+        <button onClick="display('-')">-</button>
+        <button onClick="display('1')">1</button>
+        <button onClick="display('2')">2</button>
+        <button onClick="display('3')">3</button>
+        <button onClick="display('0')">0</button>
+        <button onClick="display('+')">+</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="calculate()" class="equal">=</button>
+        <button onclick="switchToScientificMode()" id="shiftButton">Sci</button>
+        <div id="scientificButtons" style="display: none">
+          <div class="row">
+            <button onclick="sine()">sin</button>
+            <button onclick="cosine()">cos</button>
+            <button onclick="tangent()">tan</button>
+            <button onclick="squareRoot()">√</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
